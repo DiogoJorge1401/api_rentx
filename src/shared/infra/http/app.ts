@@ -1,16 +1,14 @@
 import 'reflect-metadata';
 import 'dotenv/config';
-import { connection } from '../typeorm';
-import '@shared/container';
 import 'express-async-errors';
+import '@shared/container';
 import express, { NextFunction, Request, Response } from 'express';
 import swagger from 'swagger-ui-express';
-import swaggerFile from '../../../swagger.json';
-import { routes } from './routes/routes';
-
-import { resolve } from 'path';
 import { upload } from '../../../config/upload';
+import swaggerFile from '../../../swagger.json';
 import { AppError } from '../../errors/AppError';
+import { connection } from '../typeorm';
+import { routes } from './routes/routes';
 
 connection();
 const app = express();
