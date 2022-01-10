@@ -3,13 +3,14 @@ import {
   DayjsDateProvider,
 } from '@shared/container/providers/DateProvider';
 import { MailProviderInMemory } from '@shared/container/providers/DateProvider/InMemory/MailProviderInMemory';
-import { AppError } from '@errors/AppError';
+
 import { URepository } from '../../../infra/typeorm/repositories/User';
 import { UTRepository } from '../../../infra/typeorm/repositories/UserToken';
 import { UserRepositoryInMemory } from '../../../repositories/InMemory/UserRepositoryInMemory';
 import { UserTokenRepositoryInMemory } from '../../../repositories/InMemory/UserTokenRepositoryInMemory';
 import { SendForgotPasswordMailService } from './SendForgotPasswordMailService';
 import { MailProvider } from '@shared/container/providers/MailProvider/MailProvider';
+import { AppError } from '@shared/errors/AppError';
 
 const makeFakeUser = () => {
   return {

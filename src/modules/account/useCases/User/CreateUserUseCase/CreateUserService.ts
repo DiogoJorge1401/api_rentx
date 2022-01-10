@@ -1,6 +1,7 @@
 import { hash } from 'bcrypt';
 import { inject, injectable } from 'tsyringe';
-import { AppError } from '@errors/AppError';
+import { AppError } from '@shared/errors/AppError';
+
 import { User } from '../../../infra/typeorm/entities/User';
 import { URepository, UserRequest } from '../../../infra/typeorm/repositories/User/Repository';
 @injectable()

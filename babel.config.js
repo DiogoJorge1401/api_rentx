@@ -8,12 +8,11 @@ module.exports = {
       'module-resolver',
       {
         alias: {
-          '@modules': ['./src/modules'],
-          '@config': ['./src/config'],
-          '@shared': ['./src/shared'],
-          '@errors': ['./src/shared/errors'],
-          '@middlewares': ['./src/shared/infra/http/middlewares'],
-          '@utils': ['./src/utils'],
+          '@modules': './src/modules',
+          '@config': './src/config',
+          '@shared': './src/shared',
+          '@middlewares': './src/shared/infra/http/middlewares',
+          '@utils': './src/utils',
         },
       },
     ],

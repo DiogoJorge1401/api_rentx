@@ -1,11 +1,12 @@
 import { inject, injectable } from 'tsyringe';
-import { AppError } from '@errors/AppError';
+
 import {
   CARepository,
   CarRequest,
 } from '../../../infra/typeorm/repositories/Car';
 import { Car } from '../../../infra/typeorm/entities/Car';
 import { CRepository } from '../../../infra/typeorm/repositories/Category';
+import { AppError } from '@shared/errors/AppError';
 @injectable()
 export class CreateCarService {
   constructor(

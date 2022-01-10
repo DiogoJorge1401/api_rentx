@@ -1,8 +1,9 @@
 import { inject, injectable } from 'tsyringe';
-import { AppError } from '@errors/AppError';
+
 import { CARepository } from '../../../infra/typeorm/repositories/Car';
 import { CIRepository } from '../../../infra/typeorm/repositories/CarImage';
 import { StorageProvider } from '@shared/container/providers/StorageProvider/StorageProvider';
+import { AppError } from '@shared/errors/AppError';
 
 interface Request {
   car_id: string;
