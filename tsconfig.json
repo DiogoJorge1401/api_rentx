@@ -20,9 +20,6 @@
       "@shared/*": [
         "shared/*"
       ],
-      "@errors/*": [
-        "shared/errors/*"
-      ],
       "@middlewares/*": [
         "shared/infra/http/middlewares/*"
       ],

@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { AppError } from '@errors/AppError';
+
 import {
   CARepository,
   CarRequest,
@@ -8,6 +8,7 @@ import { CarRepositoryInMemory } from '../../../repositories/InMemory/CarReposit
 import { CreateCarService } from './CreateCarService';
 import { CRepository } from '../../../infra/typeorm/repositories/Category';
 import { CategoryRepositoryInMemory } from '../../../repositories/InMemory/CategoryRepositoryInMemory';
+import { AppError } from '@shared/errors/AppError';
 
 const makeFakeCarDTO = (): CarRequest => {
   return {

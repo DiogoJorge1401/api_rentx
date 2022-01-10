@@ -1,12 +1,13 @@
 import { inject, injectable } from 'tsyringe';
 import { v4 as uuid } from 'uuid';
 import { DateProvider } from '@shared/container/providers/DateProvider/DateProvider';
-import { AppError } from '@errors/AppError';
+
 import { URepository } from '../../../infra/typeorm/repositories/User';
 import { UTRepository } from '../../../infra/typeorm/repositories/UserToken';
 
 import { resolve } from 'path';
 import { MailProvider } from '@shared/container/providers/MailProvider/MailProvider';
+import { AppError } from '@shared/errors/AppError';
 
 @injectable()
 export class SendForgotPasswordMailService {

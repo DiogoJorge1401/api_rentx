@@ -1,4 +1,4 @@
-import { AppError } from '@errors/AppError';
+import { AppError } from '@shared/errors/AppError';
 import { CRepository } from '../../../infra/typeorm/repositories/Category/Repository';
 import { CategoryRepositoryInMemory } from '../../../repositories/InMemory/CategoryRepositoryInMemory';
 import { CreateCategoryService } from './CreateCategoryService';

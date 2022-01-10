@@ -1,11 +1,11 @@
 import { compare } from 'bcrypt';
 import { sign } from 'jsonwebtoken';
 import { inject, injectable } from 'tsyringe';
-import { AppError } from '@errors/AppError';
 import { URepository } from '../../../infra/typeorm/repositories/User/Repository';
 import { UTRepository } from '../../../infra/typeorm/repositories/UserToken';
 import { auth } from '@config/auth';
 import { DateProvider } from '@shared/container/providers/DateProvider/DateProvider';
+import { AppError } from '@shared/errors/AppError';
 
 interface DataRequest {
   email: string;

@@ -1,9 +1,10 @@
-import { AppError } from '@errors/AppError';
+
 import { CARepository } from '@modules/car/infra/typeorm/repositories/Car';
 import { CarRepositoryInMemory } from '@modules/car/repositories/InMemory/CarRepositoryInMemory';
 import { DateProvider } from '@shared/container/providers/DateProvider/DateProvider';
 import { DayjsDateProvider } from '@shared/container/providers/DateProvider/implementations/DayjsDateProvider';
 import dayjs from 'dayjs';
+import { AppError } from '@shared/errors/AppError';
 import { RRepository } from '../../../infra/typeorm/repositories';
 import { RentalRepositoryInMemory } from '../../../repositories/InMemory/RentalRepositoryInMemory';
 import { CreateRentalService } from './CreateRentalService';

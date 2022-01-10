@@ -1,5 +1,6 @@
 import { inject, injectable } from 'tsyringe';
-import { AppError } from '@errors/AppError';
+import { AppError } from '@shared/errors/AppError';
+
 import { CARepository } from '../../../infra/typeorm/repositories/Car';
 import { SRepository } from '../../../infra/typeorm/repositories/Specification';
 

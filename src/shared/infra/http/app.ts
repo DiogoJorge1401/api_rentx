@@ -7,9 +7,10 @@ import express, { NextFunction, Request, Response } from 'express';
 import swagger from 'swagger-ui-express';
 import swaggerFile from '../../../swagger.json';
 import { routes } from './routes/routes';
-import { AppError } from '@errors/AppError';
+
 import { resolve } from 'path';
 import { upload } from '../../../config/upload';
+import { AppError } from '../../errors/AppError';
 
 connection();
 const app = express();

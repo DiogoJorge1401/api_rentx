@@ -1,4 +1,4 @@
-import { AppError } from '@errors/AppError';
+
 import { DateProvider } from '@shared/container/providers/DateProvider/DateProvider';
 import { inject, injectable } from 'tsyringe';
 import { CARepository } from '@modules/car/infra/typeorm/repositories/Car';
@@ -6,6 +6,7 @@ import {
   CreateRentalRequest,
   RRepository,
 } from '../../../infra/typeorm/repositories';
+import { AppError } from '@shared/errors/AppError';
 
 @injectable()
 export class CreateRentalService {

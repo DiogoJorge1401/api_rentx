@@ -2,8 +2,8 @@ import { sign, verify } from 'jsonwebtoken';
 import { inject, injectable } from 'tsyringe';
 import { auth } from '@config/auth';
 import { UTRepository } from '../../../infra/typeorm/repositories/UserToken';
-import { AppError } from '@errors/AppError';
 import { DateProvider } from '@shared/container/providers/DateProvider/DateProvider';
+import { AppError } from '@shared/errors/AppError';
 
 interface Payload {
   sub: string;

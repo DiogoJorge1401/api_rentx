@@ -1,9 +1,10 @@
-import { inject, injectable } from 'tsyringe';
-import { AppError } from '@errors/AppError';
-import { UTRepository } from '../../../infra/typeorm/repositories/UserToken';
-import { DateProvider } from '../../../../../shared/container/providers/DateProvider';
-import { URepository } from '../../../infra/typeorm/repositories/User';
 import { hash } from 'bcrypt';
+import { inject, injectable } from 'tsyringe';
+import { DateProvider } from '../../../../../shared/container/providers/DateProvider';
+import { AppError } from '@shared/errors/AppError';
+import { URepository } from '../../../infra/typeorm/repositories/User';
+import { UTRepository } from '../../../infra/typeorm/repositories/UserToken';
+
 
 interface ResetPasswordRequest {
   token: string;
