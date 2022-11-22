@@ -1,4 +1,12 @@
-# Cadastro de carro
+# Rotas / Documentação:
+
+***Para conhecer as rotas da aplicação cheque a rota: <a href="">/api-docs</a>***
+
+
+# Casos de uso
+
+>## Cadastro de carro
+
 
 **RF:**
 
@@ -12,7 +20,7 @@
 
 <br/>
 
-# Listagem de carros
+>## Listagem de carros
 
 **RF:**
 
@@ -27,7 +35,7 @@
 
 <br/>
 
-# Cadastro de especificação no carro
+>## Cadastro de especificação no carro
 
 **RF:**
 
@@ -41,7 +49,7 @@
 
 <br/>
 
-# Cadastro de imagens do carro
+>## Cadastro de imagens do carro
 
 **RF:**
 
@@ -58,7 +66,7 @@
 
 <br/>
 
-# Aluguel de carro
+>## Aluguel de carro
 
 **RF:**
 
@@ -75,7 +83,7 @@
 
 <br>
 
-# Devolução de carro
+>## Devolução de carro
 
 **RF**
 
@@ -93,7 +101,7 @@
 
 <br>
 
-# Listagem de Alugueis para usuário
+>## Listagem de Alugueis para usuário
 
 **RF**
 
@@ -103,7 +111,7 @@
 
 - O usuário deve estar logado na aplicação
 
-# Recuperar Senha
+>## Recuperar Senha
 
 **RF**
 
@@ -115,8 +123,3 @@
 
 - O usuário precisa informar uma nova senha
 - O link enviado para a recuperação deve expirar em 3 horas
-
-<hr>
-
-# Rotas/Documentação:
-## Para conhecer as rotas da aplicação cheque a rota: <a href="">/api-docs</a>
