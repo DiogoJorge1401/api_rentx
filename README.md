@@ -115,3 +115,8 @@
 
 - O usuário precisa informar uma nova senha
 - O link enviado para a recuperação deve expirar em 3 horas
+
+<hr>
+
+# Rotas/Documentação:
+## Para conhecer as rotas da aplicação cheque a rota: <a href="">/api-docs</a>
