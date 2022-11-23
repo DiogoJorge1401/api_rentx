@@ -28,8 +28,5 @@ export class EtherealMailProvider implements MailProvider {
       subject,
       html: templateHTML,
     });
-
-    console.log('Message sent %s', message.messageId);
-    console.log('Preview %s', nodemailer.getTestMessageUrl(message));
   }
 }

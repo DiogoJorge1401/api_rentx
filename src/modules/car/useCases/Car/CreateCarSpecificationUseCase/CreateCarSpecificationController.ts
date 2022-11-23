@@ -9,7 +9,6 @@ export class CreateCarSpecificationController {
     );
     const { specifications_id } = req.body;
     const { id } = req.params;
-    console.log('Controller');
     return res.status(201).json(
       await createCarSpecificationService.execute({
         car_id: id,

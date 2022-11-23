@@ -1,32 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "lib": [
-      "esnext"
-    ],
-    "checkJs": true,
-    "noUnusedLocals": true,
-    "skipLibCheck": false,
-    "strict": true,
+    "strict": false,
     "allowJs": true,
     "noImplicitAny": false,
     "noEmitOnError": true,
     "removeComments": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
     "strictPropertyInitialization": false,
     "strictBindCallApply": true,
-    "noImplicitThis": true,
+    "noImplicitThis": false,
     "noImplicitReturns": true,
-    "alwaysStrict": true,
+    "alwaysStrict": false,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "emitDecoratorMetadata": true,
-    "outDir": "./dist",
-    "baseUrl": "./src",
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "baseUrl": "src",
     "rootDir": ".",
     "resolveJsonModule": true,
     "typeRoots": [
@@ -50,5 +45,9 @@
         "utils/*"
       ]
     }
-  }
+  },
+  "exclude": [
+    "coverage",
+    "prettier*"
+  ]
 }

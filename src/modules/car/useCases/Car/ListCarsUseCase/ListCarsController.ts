@@ -5,11 +5,10 @@ import { ListCarsService } from './ListCarsService';
 
 export class ListCarsController {
   async handle(req: Request, res: Response) {
-    console.log('oioi');
     const listCarsService = container.resolve(ListCarsService);
     const { name, brand, category_id } = req.query as unknown as CarRequest;
     return res.json(
-      await listCarsService.execute({ brand, category_id, name })
+      await listCarsService.execute({ brand, category_id, name } as CarRequest)
     );
   }
 }
