@@ -16,8 +16,8 @@ export const ensureAuthenticated = async (
   const authorization = req.headers.authorization;
   if (!authorization) throw new AppError('Token missing', 401);
   const [, token] = authorization.split(' ');
-  try {
-    const { sub: user_id } = verify(token, auth.secret_token) as verifyProps;
+  try {    
+    const { sub: user_id } = verify(token, auth.secret_refresh_token) as verifyProps;
     req.user_id = user_id;
     next();
   } catch (err) {
